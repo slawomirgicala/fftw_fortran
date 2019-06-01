@@ -26,7 +26,7 @@ program main
         t = i/1000.0
         in(i) = cos(2*PI_16*t*2)
         write(1,*) t, " ", in(i)
-        in(i) = in(i) + ((rand()*2 - 1)*0.01)
+        in(i) = in(i) + ((rand()*2 - 1)*0.1)
         write(2,*) t, " ", in(i)
     end do
 

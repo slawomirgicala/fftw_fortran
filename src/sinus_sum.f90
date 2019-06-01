@@ -27,8 +27,6 @@ program main
     plan = fftw_plan_dft_1d(1000, complex_in, out, FFTW_FORWARD, FFTW_ESTIMATE)
     call fftw_execute_dft(plan, complex_in, out)
 
-    write(*, *) out
-
     do i=1,size(out)
         write(2,*) i, " ", abs(out(i))
     end do

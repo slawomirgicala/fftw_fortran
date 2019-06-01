@@ -1,0 +1,16 @@
+unset grid
+set terminal pdf
+set output "sin_sum_frequency_amplitude.pdf"
+set key box top left
+set multi
+set key opaque
+set key box
+set key width 1 height 0.5 font  'Arial, 14'
+set style data lines
+set termopt enhanced
+set xlabel 'time' font 'Arial, 14'
+set ylabel 'amplitude' font 'Arial, 14'
+set xtics font 'Arial, 14'
+set ytics font 'Arial, 14'
+set termoption dashed
+plot "sinus_sum_frequency_amplitude.txt" title "FFTW result on sin(2*pi*t*200)+2sin(2*pi*t*400)"

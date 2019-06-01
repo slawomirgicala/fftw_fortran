@@ -51,7 +51,7 @@ program main
 
     do i=1,1000
         t = i/1000.0
-        write(5,*) t, " ", real(inversed(i))
+        write(5,*) t, " ", real(inversed(i))/1000.0
     end do
 
     call fftw_destroy_plan(plan)
